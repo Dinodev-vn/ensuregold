@@ -1,0 +1,43 @@
+.circle-wrapper {
+    width: 80px;
+    height: 80px;
+    background-color: initial;
+    border-radius: 50%;
+    border: 1px solid #46b3f2;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: linear-gradient( to bottom, #46b3f2, #0c6395);
+    display: grid;
+    place-items: center;
+}
+
+.circle i{
+    font-size: 32px;
+    color: white;
+    animation: anima 2s linear infinite;
+}
+
+@keyframes anima {
+    0% {
+        transform: rotate(0deg);
+    } 50% {
+        transform: rotate(10deg);
+    } 75% {
+        transform: rotate(-15deg);
+    } 0% {
+        transform: rotate(0deg);
+    }
+}
+
+.messfb {
+    bottom: 100px;
+}

@@ -1,0 +1,362 @@
+@media (max-width: 1023px) {
+    body::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    /* header */
+    .header {
+        height: 80px;
+    }
+
+    .header > .list-head {
+        display: none;
+    }
+
+    .header > img {
+        width: calc(168px - 24px);
+        height: calc(49px - 7px);
+        left: 24px;
+
+    }
+
+    /*  */
+    .nav-btn {
+        display: block;
+        position: absolute;
+        font-size: 38px;
+        right: 16px;
+        top: 18px;
+        color: white;
+    }
+
+    /*  */
+    .overlay-full {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+        animation: navmobile linear 0.2s;
+    }
+
+    /*  */
+    .nav-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1667a1;
+        padding: 10px;
+        opacity: 1;
+        transform: translateX(100%);
+        transition: transform linear 0.2s, opacity linear 0.2s;
+    }
+
+    .headnav-mb {
+        width: 100%;
+        height: 56px;
+        margin-top: 12px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgb(247, 245, 245);
+
+    }
+
+    .nav-mobile > .headnav-mb > img {
+        transform: scale(1);
+    }
+
+    .nav-mobile > .headnav-mb > .closed {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        font-size: 36px;
+        text-align: right;
+        color: white;
+        margin-right: 8px;
+        transform: translateY(-6px);
+        float: right;
+    }
+
+
+    .nav-mobile > ul {
+        list-style: none;
+    }
+
+    .nav-mobile > ul li {
+        margin-bottom: 12px;
+    }
+
+    .nav-mobile a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    /* animation */
+    #check-nav:checked ~ .overlay-full {
+        display: block;
+    }
+
+    #check-nav:checked ~ .nav-mobile {
+        transform: translateX(0);
+    }
+
+
+
+
+    .main > *{
+        display: none;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    .reason-title {
+        font-size: 1rem;
+    }
+
+    .title_one {
+        display: block;
+        margin-top: 36px;
+        margin-bottom: 36px;
+        font-size: 22px;
+    }
+
+    .reason {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .reason > .card {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    /* section */
+    .section {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        position: static;
+        height: auto;
+        margin-bottom: 80px;
+    }
+
+    .section > .img__section {
+        position: static;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 330px;
+        transform: scale(1);
+        padding-bottom: 0px;
+    }
+
+    .img__section > h2 {
+        font-size: 18px;
+    }
+
+    .img__section > p {
+        font-size: 14px;
+    }
+
+    .section > .content__section {
+        position: static;
+    }
+
+    .section > .content__section > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*  */
+    .title_two {
+        display: block;
+        font-size: 18px;
+    }
+
+    .hot {
+        display: block;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .card-hot {
+        width: 50%;
+        margin-bottom: 16px;
+    }
+
+    .card-hot > img {
+        transform: scale(0.8);
+    }
+
+    .card-hot > p {
+        transform: scale(0.8);
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*  */
+    .title_three {
+        display: block;
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 24px;
+    }
+
+    .p-thanhphan {
+        display: block;
+        transform: scale(0.9);
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+
+    /*  */
+    .title_four {
+        display: block;
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    #formList {
+        display: block;
+    }
+
+    #list {
+        transition: transform 0.5s ease;
+    }
+
+    .item {
+        width: 400px;
+    }
+
+    .item > .content {
+        padding: 12px;
+    }
+
+    .item > .content > h2 {
+        font-size: 20px;
+    }
+
+    .item > .content > p {
+
+    }
+
+    /*  */
+    .formLD {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .wrapper-form {
+        width: 100%;
+    }
+
+    .main-form {
+        width: 100%;
+    }
+
+    .main-form > .title-form {
+        font-size: 26px;
+    }
+
+    .main-form > .left-right {
+        padding: 10px;
+    }
+
+    .main-form > .left-right > .right-form {
+        display: none;
+    }
+
+    .left-form {
+        width: 100%;
+    }
+
+    .left-form input {
+        max-width: 220px;
+    }
+
+    /*  */
+    .footer {
+        display: block;
+        height: auto;
+    }
+
+    .ft-wrap {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-col:nth-child(4) {
+        display: none;
+    }
+
+    .footer-col:nth-child(2) > .ft-list > ul > li:nth-last-child(1) {
+        display: none;
+    }
+
+    .ft-wrap > .footer-col {
+        width: 100%;
+        /* margin-bottom: 50px; */
+        height: auto;
+    }
+
+    .footer-col > p {
+        font-size: 20px;
+    }
+
+    .footer-col  li {
+        font-size: 18px;
+    }
+
+    /*  */
+    .ft-contact {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .ft-contact > * {
+        margin: 10px auto;
+    }
+
+    .ft-text {
+        max-width: 300px;
+        text-align: center;
+        margin: 50px auto 0;
+        transform: translateY(-25px);
+    }
+
+    .ft-text > p {
+        display: inline;
+    }
+
+    /* mini element */
+    .circle-wrapper {
+        transform: scale(0.7);
+        left: 6px !important;
+        bottom: 6px !important;
+    }
+
+    .messfb {
+        transform: scale(0.7);
+        left: 6px !important;
+        bottom: 68px !important;
+    }
+}
+
+@keyframes navmobile {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
