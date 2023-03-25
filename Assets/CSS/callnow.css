@@ -41,3 +41,36 @@
 .messfb {
     bottom: 100px;
 }
+
+@media (min-width: 1023px) {
+    .circle-wrapper {
+        transform: scale(0.7);
+    }
+    .messfb {
+        bottom: 80px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .circle-wrapper {
+        left: 0px !important;
+    }
+
+    .section {
+        margin-bottom: 48px;
+    }
+
+    .img__section {
+        background-image: none;
+        margin-bottom: 34px;
+        height: auto !important;
+    }
+
+    .img__section > p {
+        color: black;
+    }
+
+    .content__section {
+        border-radius: 20px 60px 20px 60px;
+    }
+}

@@ -6,6 +6,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -171,7 +172,9 @@ body::-webkit-scrollbar-track {
     position: absolute;
     width: 448px;
     height: 398px;
-    background-image: url(/Assets/Images/background-GS.png);
+    /* background-image: url(/Assets/Images/ensure-family.jpg); */
+    background-image: linear-gradient( to bottom, #f7d48e, #dba63d );
+    border-radius: 100px 30px 100px 30px;
     background-size: contain;
     left: 50px;
     padding: 45px;
@@ -183,11 +186,18 @@ body::-webkit-scrollbar-track {
     -webkit-background-clip: text;
 }
 
+.img__section > p {
+    color: white;
+    text-shadow: 0 0 1px white;
+}
+
 .content__section {
     position: absolute;
     top: 50px;
     right: 40px;
     z-index: -1;
+    border-radius: 30px 100px 30px 100px;
+    overflow: hidden;
 }
 
 /* hot */

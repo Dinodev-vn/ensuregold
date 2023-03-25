@@ -350,6 +350,34 @@
         left: 6px !important;
         bottom: 68px !important;
     }
+
+    .item {
+        margin: 0;
+        width: auto;
+    }
+
+    .item > .content {
+        padding: 0;
+    }
+
+    .item > .content > h2 {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .item > .content > p {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #list::before {
+        width: var(--before-width) !important;
+        height: 230px;
+    }
 }
 
 @keyframes navmobile {
