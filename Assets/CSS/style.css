@@ -331,6 +331,7 @@ body::-webkit-scrollbar-track {
     scroll-behavior: smooth;
     position: relative;
     scroll-snap-type: both;
+    pointer-events: none;
 
 }
 
